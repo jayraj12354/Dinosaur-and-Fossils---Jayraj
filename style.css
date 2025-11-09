@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
     font-family: Poppins;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -21,14 +23,22 @@ header {
     font-weight: bold;
     font-size: 30px;
     margin-left: 20px;
-
+    font-family: 'Cinzel';
+    color: #5c452f;
+    color: #6B4E31;
+    font-weight: 700;
+    text-shadow: 0 8px 32px 0 rgba(255, 0, 0, 0.37);
+    display: flex;
+    align-items: center;
 
 }
 
 #logo:hover {
     cursor: not-allowed;
+}
 
-
+#logo>img {
+    height: 40px;
 }
 
 nav {
@@ -36,15 +46,16 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid rgb(255, 255, 255, 0.4);
+    border: 1px solid rgb(255, 255, 255, 0.5);
     border-radius: 30px;
     padding: 5px;
-    background-color: rgba(255, 255, 255, 0.403);
-    /* background-color: rgba(83,88,31, 0.403); */
+    background-color: rgba(255, 255, 255, 0.333);
     top: 40px;
     width: 900px;
     backdrop-filter: blur(20px);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+
 
 }
 
@@ -62,7 +73,7 @@ nav {
     margin: 1px;
     font-size: medium;
     padding: 5px 8px;
-    /* transition: 0.1s; */
+
 
 
 }
@@ -72,10 +83,12 @@ nav {
     border-radius: 20px;
     padding: 5px 8px;
     background-color: rgba(94, 184, 15, 0.33);
-    backdrop-filter: blur(40px);
-    box-shadow: 0px 8px 20px 0px rgba(94, 184, 15, 0.25);
+    background-color: rgba(107, 78, 48, 0.43);
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 8px 20px 0px rgba(94, 184, 15, 0.15);
     border-top: 1.5px solid rgba(255, 255, 255, 0.4);
     transform: scale(1.2, 1.2);
+
 }
 
 
@@ -91,7 +104,7 @@ nav {
     border: 1px solid rgb(255, 255, 255);
     padding: 10px;
     padding-left: 14px;
-    width: 15vw;
+    width: 12vw;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 
@@ -105,7 +118,12 @@ nav {
     border: 1px solid white;
     margin-right: 25px;
     cursor: pointer;
-    
+}
+
+.input>button:active {
+    background-color: rgba(255, 255, 255, 0.23);
+    backdrop-filter: blur(15px);
+    /* color: white; */
 }
 
 main {
@@ -158,7 +176,7 @@ main>button:hover {
     background-color: rgba(94, 184, 15, 0.1);
     transition: 0.25s;
     color: white;
-    border: 1px solid rgba(94, 184, 15);
+    border: 1px solid rgba(94, 184, 15, 0.8);
     backdrop-filter: blur(5px);
     cursor: pointer;
     background-color: rgb(0, 0, 0, 0.5px);
@@ -169,3 +187,87 @@ main>button:active {
     transform: scale(1, 1);
 
 }
+
+/* ---------------------------------------------------------- */
+.page2 {
+    background-image: url(background-page2.jpg);
+    background-position: center;
+    background-size: cover;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), url(background-page2.jpg));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.page2>section {
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: repeat(3, 500px);
+    gap: 70px;
+    /* border: 2px solid blue; */
+    height: auto;
+    margin-top: 60px;
+    justify-content: center;
+    margin-bottom: 100px;
+    z-index: 1;
+
+}
+
+.dinogrid {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    background-color: rgb(0, 0, 0,0.7);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 15px 32px  rgba(0, 0, 0, 0.37);
+    gap: 15px;
+
+}
+.dinogrid>img{
+    width: 99%;
+    height: 48%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+}
+.dinogrid:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0.12s;
+
+}
+.dinogrid>h1{
+    color: rgb(255, 255, 255);
+    font-family: 'Cinzel';
+    font-weight:bolder;
+    font-size:30px;
+}
+.dinogrid>ul{
+    color: white;
+    padding-left: 15px;
+    width: 90%;  
+}
+.dinogrid>ul>li{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+
+#heading-page2 {
+    margin-top: 40px;
+
+}
+
+#heading-page2>h1 {
+    font-size: 70px;
+    color: white;
+}
+
+/* ---------------------------------------------------------- */
