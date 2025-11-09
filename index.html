@@ -4,33 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <title>DinoVerse</title>
+    <link rel="shortcut icon" href="./Logo.png" type="image/x-icon">
+    
 
 </head>
 
 <body>
-    <div class="login_page">
-        <header>
-            <nav>
-                <div id="logo">
-                    <img src="Logo.png" alt="">
-                    <p>DinoVerse</p>
+    <header>
+        <nav>
+            <div id="logo">
+                <img src="Logo.png" alt="">
+                <p>DinoVerse</p>
+            </div>
+            <div class="input_link">
+                <div class="input" style="display: flex; justify-self: center; align-items: center;">
+                    <input type="text" placeholder="Explore Here ">
+                    <button>Search</button>
                 </div>
-                <div class="input_link">
-                    <div class="input" style="display: flex; justify-self: center; align-items: center;">
-                        <input type="text" placeholder="Explore Here ">
-                        <button>Search</button>
-                    </div>
-                    <div class="link">
-                        <a href="">HOME</a>
-                        <a href="">DINOSAURS</a>
-                        <a href="">FOSSILS</a>
-                        <a href="">ABOUT</a>
-                    </div>
+                <div class="link">
+                    <a href="#page1">HOME</a>
+                    <a href="#page2">DINOSAURS</a>
+                    <a href="#page3">FOSSILS</a>
+                    <a href="#page4">ABOUT</a>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
+    <div class="login_page" id="page1">
+
         <main>
             <div class="h1_p">
                 <h1>Welcome to the DinoVerse</h1>
@@ -41,12 +44,14 @@
 
         </main>
     </div>
-    <div class="page2">
+
+
+    <div class="page2" id="page2">
         <div id="heading-page2">
             <h1>Creatures of the Jurassic Age</h1>
         </div>
         <section>
-            <div class="dinogrid">
+            <div class="fossile-grid">
                 <img src="./dinosaurs-images/trex.jpg" alt="">
                 <h1>Tyrannosaurus Rex</h1>
                 <ul>
@@ -57,7 +62,7 @@
                 </ul>
             </div>
 
-            <div class="dinogrid">
+            <div class="fossile-grid">
                 <img src="./dinosaurs-images/Brachiosaurus.jpg" alt="">
                 <h1>Brachiosaurus</h1>
                 <ul>
@@ -68,7 +73,7 @@
                 </ul>
             </div>
 
-            <div class="dinogrid">
+            <div class="fossile-grid">
                 <img src="./dinosaurs-images/Triceratops.jpg" alt="">
                 <h1>Triceratops</h1>
                 <ul>
@@ -79,7 +84,7 @@
                 </ul>
             </div>
 
-            <div class="dinogrid">
+            <div class="fossile-grid">
                 <img src="./dinosaurs-images/Velociraptor.jpg" alt="">
                 <h1>Velociraptor</h1>
                 <ul>
@@ -90,7 +95,7 @@
                 </ul>
             </div>
 
-            <div class="dinogrid">
+            <div class="fossile-grid">
                 <img src="./dinosaurs-images/Stegosaurus.jpg" alt="">
                 <h1>Stegosaurus</h1>
                 <ul>
@@ -102,7 +107,7 @@
             </div>
 
 
-            <div class="dinogrid">
+            <div class="fossile-grid">
                 <img src="./dinosaurs-images/Spinosaurus.jpg" alt="">
                 <h1>Spinosaurus</h1>
                 <ul>
@@ -113,7 +118,7 @@
                 </ul>
             </div>
 
-            <div class="dinogrid">
+            <div class="fossile-grid">
                 <img src="./dinosaurs-images/Ankylosaurus.jpg" alt="">
                 <h1>Ankylosaurus</h1>
                 <ul>
@@ -124,7 +129,7 @@
                 </ul>
             </div>
 
-            <div class="dinogrid">
+            <div class="fossile-grid">
                 <img src="./dinosaurs-images/Allosaurus.jpg" alt="">
                 <h1>Allosaurus</h1>
                 <ul>
@@ -135,7 +140,7 @@
                 </ul>
             </div>
 
-            <div class="dinogrid">
+            <div class="fossile-grid">
                 <img src="./dinosaurs-images/Pteranodon.jpg" alt="">
                 <h1>Pteranodon</h1>
                 <ul>
@@ -150,113 +155,120 @@
 
 
 
-    <!-- ---------------------------------------------------- -->
 
-    <div class="page2">
-        <div id="heading-page2">
-            <h1>Creatures of the Jurassic Age</h1>
+
+    <div class="page3" id="page3">
+        <div id="heading-page3">
+            <h1>Uncover the secrets buried in fossils</h1>
         </div>
         <section>
-            <div class="dinogrid">
-                <img src="./dinosaurs-images/trex.jpg" alt="">
+            <div class="fossile-grid">
+                <img src="./fossiles-images/trex-fossile.jpg" alt="">
                 <h1>Tyrannosaurus Rex</h1>
                 <ul>
-                    <li>Period: Late Cretaceous</li>
-                    <li>A massive predator with strong jaws and teeth.
-                        Ruled the land as one of the most feared hunters.
-                        Fossils found mainly in North America.</li>
+                    <li>The specimen known as “Sue,” discovered in South Dakota, represents the most complete and
+                        best-preserved T. rex fossil to date. It provides crucial data on skeletal structure, muscle
+                        attachment, and predator biomechanics during the Late Cretaceous period.</li>
                 </ul>
             </div>
 
-            <div class="dinogrid">
-                <img src="./dinosaurs-images/Brachiosaurus.jpg" alt="">
+            <div class="fossile-grid">
+                <img id="Brachiosaurus" src="./fossiles-images/Brachiosaurus-fossile.jpg" alt="">
                 <h1>Brachiosaurus</h1>
                 <ul>
-                    <li>Period: Late Jurassic</li>
-                    <li>A tall, long-necked herbivore that ate from treetops.
-                        Walked on four legs with longer front limbs.
-                        One of the tallest dinosaurs ever known.</li>
+                    <li>Fossils attributed to Brachiosaurus and its close relative Giraffatitan from Tanzania offer
+                        significant insight into sauropod anatomy. These remains illustrate adaptations for vertical
+                        browsing and unique limb proportions among large Jurassic herbivores</li>
                 </ul>
             </div>
 
-            <div class="dinogrid">
-                <img src="./dinosaurs-images/Triceratops.jpg" alt="">
+            <div class="fossile-grid">
+                <img src="./fossiles-images/Triceratops-fossile.jpg" alt="">
                 <h1>Triceratops</h1>
                 <ul>
-                    <li>Period: Late Cretaceous</li>
-                    <li>Had three facial horns and a large bony frill.
-                        Lived in herds and moved across open plains.
-                        One of the last great dinosaurs before extinction.</li>
+                    <li>The “Big John” specimen, the largest known Triceratops, displays exceptional cranial
+                        preservation. It has contributed to the understanding of horn morphology, frill function, and
+                        intraspecific behavior within Ceratopsidae.</li>
                 </ul>
             </div>
 
-            <div class="dinogrid">
-                <img src="./dinosaurs-images/Velociraptor.jpg" alt="">
+            <div class="fossile-grid">
+                <img id="Velociraptor" src="./fossiles-images/Velociraptor-fossile.jpg" alt="">
                 <h1>Velociraptor</h1>
                 <ul>
-                    <li>Period: Late Cretaceous</li>
-                    <li>A small, fast, and intelligent hunter.
-                        Used its sharp claws for catching prey.
-                        Feathered and bird-like in appearance.</li>
+                    <li>The “Fighting Dinosaurs” specimen from Mongolia preserves a Velociraptor and Protoceratops
+                        locked in combat. This fossil offers direct evidence of predatory behavior, feathered anatomy,
+                        and ecological interactions within the Late Cretaceous desert .</li>
                 </ul>
             </div>
 
-            <div class="dinogrid">
-                <img src="./dinosaurs-images/Stegosaurus.jpg" alt="">
+            <div class="fossile-grid">
+                <img src="./fossiles-images/Stegosaurus-fossile.jpg" alt="">
                 <h1>Stegosaurus</h1>
                 <ul>
-                    <li>Period: Late Jurassic</li>
-                    <li>Famous for the plates along its back.
-                        Used its spiked tail for protection.
-                        Moved slowly and fed on low plants.</li>
+                    <li>The “Sophie” skeleton represents the most complete Stegosaurus ever found. Its exceptional
+                        articulation has clarified vertebral configuration, plate arrangement, and locomotor
+                        biomechanics of early armored dinosaurs.</li>
                 </ul>
             </div>
 
 
-            <div class="dinogrid">
-                <img src="./dinosaurs-images/Spinosaurus.jpg" alt="">
+            <div class="fossile-grid">
+                <img src="./fossiles-images/Spinosaurus-fossile.jpg" alt="">
                 <h1>Spinosaurus</h1>
                 <ul>
-                    <li>Period: Cretaceous</li>
-                    <li>The largest known carnivorous dinosaur.
-                        Had a sail-like spine and long crocodile-like snout.
-                        Lived near rivers and hunted fish.</li>
+                    <li>TRecent Moroccan fossils from the Kem Kem beds have redefined the profile of Spinosaurus. The
+                        remains confirm semi-aquatic adaptations, elongated neural spines, and limb modifications
+                        associated with piscivorous ecology.</li>
                 </ul>
             </div>
 
-            <div class="dinogrid">
-                <img src="./dinosaurs-images/Ankylosaurus.jpg" alt="">
+            <div class="fossile-grid">
+                <img src="./fossiles-images/Ankylosaurus.jpg" alt="">
                 <h1>Ankylosaurus</h1>
                 <ul>
-                    <li>Period: Late Cretaceous</li>
-                    <li>A heavily armored plant-eater.
-                        Had a clubbed tail for defense.
-                        Its body was covered in thick bony plates.</li>
+                    <li>The Zuul crurivastator specimen, a close relative of Ankylosaurus, retains armor, keratinous
+                        scales, and soft-tissue impressions. These fossils have advanced research on dermal defense
+                        structures and evolutionary development of tail clubs.</li>
                 </ul>
             </div>
 
-            <div class="dinogrid">
-                <img src="./dinosaurs-images/Allosaurus.jpg" alt="">
+            <div class="fossile-grid">
+                <img src="./fossiles-images/Allosaurus-fossile.jpg" alt="">
                 <h1>Allosaurus</h1>
                 <ul>
-                    <li>Period: Late Jurassic</li>
-                    <li>A fierce predator before T-Rex appeared.
-                        Had sharp teeth and curved claws.
-                        Often hunted in packs.</li>
+                    <li>AThe “Big Al” specimen from Wyoming provides an almost complete skeleton exhibiting multiple
+                        healed injuries. It serves as a primary reference for theropod pathology, growth patterns, and
+                        predator behavior in the Late Jurassic ecosystem.</li>
                 </ul>
             </div>
 
-            <div class="dinogrid">
-                <img src="./dinosaurs-images/Pteranodon.jpg" alt="">
+            <div class="fossile-grid">
+                <img src="./fossiles-images/Pteranodon-fossile.jpg" alt="">
                 <h1>Pteranodon</h1>
                 <ul>
-                    <li>Period: Late Cretaceous</li>
-                    <li>Not a dinosaur, but a flying reptile.
-                        Had a large wingspan and toothless beak.
-                        Glided over oceans to catch fish.</li>
+                    <li>Fossils from the Niobrara Formation in Kansas preserve numerous articulated skeletons of
+                        Pteranodon. These remains are essential to understanding flight dynamics, crest variation, and
+                        sexual dimorphism in Late Cretaceous pterosaurs.</li>
                 </ul>
             </div>
         </section>
+    </div>
+
+    <div class="About" id="page4">
+        <div id="info">
+            <h4>About</h4>
+            <p>Welcome to our world of Dinosaurs and Fossils — a journey back in time to when giant creatures ruled the
+                Earth. This website is designed to share knowledge about different dinosaur species, their fossils, and
+                how they shaped the planet's history.
+                Here, every page brings you closer to understanding ancient life, from towering herbivores to fierce
+                predators, and the fossils that keep their stories alive.</p>
+                <p>This project reflects a passion for ancient history, nature, and science — connecting curiosity with creativity. We hope this website inspires others to learn more about the incredible creatures that shaped our planet long before humans existed.</p>
+        </div>
+        <div class="icons">
+            <a href="https://www.instagram.com/i_am_jd_08?igsh=MXgyYXF3NXF0N3BtMg=="><img src="./Instagram.jpg" alt="INSTAGRAM"></a>
+            <a href="https://www.linkedin.com/in/jayraj-r-deshmukh?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="./Linkedin.jpg" alt="LINKEDIN"></a>
+        </div>
     </div>
 
 </body>
